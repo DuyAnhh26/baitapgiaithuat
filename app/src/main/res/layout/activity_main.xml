@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/daySo"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="Dãy số:"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Nhập vào dãy số"
+        android:inputType="number"
+        android:minHeight="50dp"
+        android:padding="12dp"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@id/soKiemTra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/soKiemTra"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="Số kiểm tra:"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Nhập vào con số kiểm tra"
+        android:inputType="number"
+        android:minHeight="50dp"
+        android:padding="12dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="265dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/buttonE"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner2"
+        android:gravity="center"
+        android:text="Tìm kiếm"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/labelC"
+        android:layout_width="415dp"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:text="Kết quả: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="372dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonE"/>
+
+    <TextView
+        android:id="@+id/labelD"
+        android:layout_width="415dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Thời gian xử lý: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="506dp"
+        app:layout_constraintTop_toBottomOf="@id/labelC"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
